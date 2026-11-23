@@ -1,0 +1,223 @@
+{
+  "n_rows": 8000,
+  "churn_rate": 0.39825,
+  "test_size": 0.2,
+  "metrics": [
+    {
+      "model": "RandomForest (bagging)",
+      "accuracy": 0.700625,
+      "precision": 0.655511811023622,
+      "recall": 0.5227629513343799,
+      "f1": 0.5816593886462882,
+      "roc_auc": 0.7537897497844093,
+      "confusion_matrix": [
+        [
+          788,
+          175
+        ],
+        [
+          304,
+          333
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n           0       0.72      0.82      0.77       963\n           1       0.66      0.52      0.58       637\n\n    accuracy                           0.70      1600\n   macro avg       0.69      0.67      0.67      1600\nweighted avg       0.70      0.70      0.69      1600\n",
+      "cv_f1_mean": 0.572676437891731,
+      "cv_f1_std": 0.01579614642603289
+    },
+    {
+      "model": "Bagging(DT)",
+      "accuracy": 0.7,
+      "precision": 0.6419529837251357,
+      "recall": 0.5572998430141287,
+      "f1": 0.5966386554621849,
+      "roc_auc": 0.7446346858896926,
+      "confusion_matrix": [
+        [
+          765,
+          198
+        ],
+        [
+          282,
+          355
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n           0       0.73      0.79      0.76       963\n           1       0.64      0.56      0.60       637\n\n    accuracy                           0.70      1600\n   macro avg       0.69      0.68      0.68      1600\nweighted avg       0.70      0.70      0.70      1600\n"
+    },
+    {
+      "model": "GradientBoosting",
+      "accuracy": 0.696875,
+      "precision": 0.6402214022140221,
+      "recall": 0.5447409733124019,
+      "f1": 0.5886344359626803,
+      "roc_auc": 0.7547711152517561,
+      "confusion_matrix": [
+        [
+          768,
+          195
+        ],
+        [
+          290,
+          347
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n           0       0.73      0.80      0.76       963\n           1       0.64      0.54      0.59       637\n\n    accuracy                           0.70      1600\n   macro avg       0.68      0.67      0.67      1600\nweighted avg       0.69      0.70      0.69      1600\n",
+      "cv_f1_mean": 0.6095629450504593,
+      "cv_f1_std": 0.01932808876597922
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.699375,
+      "precision": 0.6423357664233577,
+      "recall": 0.5525902668759811,
+      "f1": 0.5940928270042194,
+      "roc_auc": 0.7510918098368031,
+      "confusion_matrix": [
+        [
+          767,
+          196
+        ],
+        [
+          285,
+          352
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n           0       0.73      0.80      0.76       963\n           1       0.64      0.55      0.59       637\n\n    accuracy                           0.70      1600\n   macro avg       0.69      0.67      0.68      1600\nweighted avg       0.69      0.70      0.69      1600\n",
+      "cv_f1_mean": 0.6047738581887644,
+      "cv_f1_std": 0.01862774472800183
+    },
+    {
+      "model": "Stacking",
+      "accuracy": 0.69375,
+      "precision": 0.6338797814207651,
+      "recall": 0.5463108320251178,
+      "f1": 0.5868465430016864,
+      "roc_auc": 0.754886857690596,
+      "confusion_matrix": [
+        [
+          762,
+          201
+        ],
+        [
+          289,
+          348
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n           0       0.73      0.79      0.76       963\n           1       0.63      0.55      0.59       637\n\n    accuracy                           0.69      1600\n   macro avg       0.68      0.67      0.67      1600\nweighted avg       0.69      0.69      0.69      1600\n"
+    },
+    {
+      "model": "Voting (soft)",
+      "accuracy": 0.7025,
+      "precision": 0.651031894934334,
+      "recall": 0.5447409733124019,
+      "f1": 0.5931623931623932,
+      "roc_auc": 0.7579695189842053,
+      "confusion_matrix": [
+        [
+          777,
+          186
+        ],
+        [
+          290,
+          347
+        ]
+      ],
+      "report": "              precision    recall  f1-score   support\n\n           0       0.73      0.81      0.77       963\n           1       0.65      0.54      0.59       637\n\n    accuracy                           0.70      1600\n   macro avg       0.69      0.68      0.68      1600\nweighted avg       0.70      0.70      0.70      1600\n"
+    }
+  ],
+  "feature_importance_rf": [
+    {
+      "feature": "late_payments_6m",
+      "importance": 0.22496133787313408
+    },
+    {
+      "feature": "monthly_bill_lkr",
+      "importance": 0.1079532202829917
+    },
+    {
+      "feature": "tenure_months",
+      "importance": 0.08384671087635943
+    },
+    {
+      "feature": "avg_download_mbps",
+      "importance": 0.07809100424790279
+    },
+    {
+      "feature": "call_minutes",
+      "importance": 0.06938667262368388
+    },
+    {
+      "feature": "data_usage_gb",
+      "importance": 0.0682513165880358
+    },
+    {
+      "feature": "age",
+      "importance": 0.05416296489239765
+    },
+    {
+      "feature": "last_complaint_No complaint",
+      "importance": 0.05363293722322539
+    },
+    {
+      "feature": "active_nights_last_month",
+      "importance": 0.050261470221941065
+    },
+    {
+      "feature": "last_complaint_Network",
+      "importance": 0.029828304062568332
+    },
+    {
+      "feature": "last_complaint_Billing",
+      "importance": 0.016831339168237914
+    },
+    {
+      "feature": "last_complaint_Customer care",
+      "importance": 0.010289227715741162
+    },
+    {
+      "feature": "plan_type_Prepaid",
+      "importance": 0.009629229059565371
+    },
+    {
+      "feature": "payment_method_Card",
+      "importance": 0.008969902521170204
+    },
+    {
+      "feature": "operator_Mobitel",
+      "importance": 0.008697013606865938
+    }
+  ],
+  "columns": [
+    "operator",
+    "district",
+    "plan_type",
+    "last_complaint",
+    "payment_method",
+    "tenure_months",
+    "monthly_bill_lkr",
+    "data_usage_gb",
+    "call_minutes",
+    "late_payments_6m",
+    "avg_download_mbps",
+    "active_nights_last_month",
+    "age",
+    "urban"
+  ],
+  "cat_cols": [
+    "operator",
+    "district",
+    "plan_type",
+    "last_complaint",
+    "payment_method"
+  ],
+  "num_cols": [
+    "tenure_months",
+    "monthly_bill_lkr",
+    "data_usage_gb",
+    "call_minutes",
+    "late_payments_6m",
+    "avg_download_mbps",
+    "active_nights_last_month",
+    "age",
+    "urban"
+  ]
+}
